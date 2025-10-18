@@ -44,7 +44,7 @@
 
 Clone
 
-git clone https://github.com/yourusername/hotel-reservation-form.git
+git clone https://github.com/Eustsakius/hotel-reservation-form.git
 Create DB
 
 CREATE DATABASE hotel_reservation;
