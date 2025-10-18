@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="id" lang="id">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta http-equiv="Content-Script-Type" content="text/javascript" />
+    <title>Reservation Hotel Room - Eustakius Satu Rajawali Ku (220711648)</title>
+    <link rel="stylesheet" type="text/css" href="styles/style.css" />
+    <script type="text/javascript" src="js/validation.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Hotel Reservation System</h1>
+        <p class="subtitle">Book your perfect stay with us</p>
+      </div>
+      
+      <form action="process_reservation.php" method="post" id="reservationForm">
+        <fieldset>
+          <legend>Personal Data</legend>
+          <div class="form-group">
+            <label for="name">Name <span class="required">*</span></label>
+            <input type="text" id="name" name="name" value="" placeholder="Enter your full name" />
+          </div>
+          
+          <div class="form-group">
+            <label>Gender <span class="required">*</span></label>
+            <div class="radio-group">
+              <input type="radio" id="gender-male" name="gender" value="Male" />
+              <label for="gender-male" class="radio-label">Male</label>
+              <input type="radio" id="gender-female" name="gender" value="Female" />
+              <label for="gender-female" class="radio-label">Female</label>
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <label for="email">Email Address <span class="required">*</span></label>
+            <input type="text" id="email" name="email" value="" placeholder="example@email.com" />
+          </div>
+          
+          <div class="form-group">
+            <label for="telp">Phone Number <span class="required">*</span></label>
+            <input type="text" id="telp" name="telp" value="" placeholder="+62 xxx xxxx xxxx" />
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Reservation Details</legend>
+          <div class="form-group">
+            <label for="reservator">Reservator Name <span class="required">*</span></label>
+            <input type="text" id="reservator" name="reservator_name" value="" placeholder="Name on reservation" />
+          </div>
+          
+          <div class="form-group">
+            <label for="booking_date">Booking Date <span class="required">*</span></label>
+            <input type="text" id="booking_date" name="booking_date" value="" placeholder="YYYY-MM-DD" />
+          </div>
+          
+          <div class="form-row">
+            <div class="form-group half">
+              <label for="roomtype">Room Type <span class="required">*</span></label>
+              <select id="roomtype" name="room_type">
+                <option value="">Select room type</option>
+                <option value="Deluxe">Deluxe Room</option>
+                <option value="Suite">Suite Room</option>
+                <option value="Standard">Standard Room</option>
+              </select>
+            </div>
+            
+            <div class="form-group half">
+              <label>Bed Type <span class="required">*</span></label>
+              <div class="radio-group">
+                <input type="radio" id="bed-single" name="bed_type" value="Single" />
+                <label for="bed-single" class="radio-label">Single</label>
+                <input type="radio" id="bed-double" name="bed_type" value="Double" />
+                <label for="bed-double" class="radio-label">Double</label>
+              </div>
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <label>Breakfast <span class="required">*</span></label>
+            <div class="radio-group">
+              <input type="radio" id="with-breakfast" name="breakfast" value="With" />
+              <label for="with-breakfast" class="radio-label">With Breakfast</label>
+              <input type="radio" id="without-breakfast" name="breakfast" value="Without" />
+              <label for="without-breakfast" class="radio-label">Without Breakfast</label>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Payment Information</legend>
+          <div class="form-row">
+            <div class="form-group half">
+              <label for="checkin">Check-in Date <span class="required">*</span></label>
+              <input type="text" id="checkin" name="checkin_date" value="" placeholder="YYYY-MM-DD" />
+            </div>
+            
+            <div class="form-group half">
+              <label for="checkout">Check-out Date <span class="required">*</span></label>
+              <input type="text" id="checkout" name="checkout_date" value="" placeholder="YYYY-MM-DD" />
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <label for="payment">Payment Method <span class="required">*</span></label>
+            <select id="payment" name="payment_method">
+              <option value="">Select payment method</option>
+              <option value="Cash">Cash</option>
+              <option value="Credit Card">Credit Card</option>
+              <option value="Transfer">Bank Transfer</option>
+            </select>
+          </div>
+        </fieldset>
+
+        <div class="form-actions">
+          <input type="submit" value="Book Now" class="btn-submit" aria-label="Book Now" />
+        </div>
+      </form>
+      
+      <div class="footer">
+        <p>Eustakius Satu Rajawali Ku - NPM: 220711648</p>
+      </div>
+    </div>
+  </body>
+</html>
