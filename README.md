@@ -40,20 +40,6 @@
 - ✅ Dual Validation (Client + Server)
 - ✅ Responsive Design (Mobile-first)
 
-## 🚀 Installation
-
-Clone
-
-git clone https://github.com/Eustsakius/hotel-reservation-form.git
-Create DB
-
-CREATE DATABASE hotel_reservation;
-Import SQL from /database/schema.sql
-Run
-
-http://localhost/hotel-reservation-form/reservasi_hotel.xhtml
-
-
 ## 📄 License
 
 MIT © 2025 Eustakius Satu Rajawali Ku
