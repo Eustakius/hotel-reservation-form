@@ -6,7 +6,7 @@
 
 **Sistem reservasi hotel dengan XHTML, CSS3, PHP MySQLi prepared statements, dual validation, dan responsive design.**
 
-**NPM:** 220711648 | **Author:** Eustakius Satu Rajawali Ku
+**NPM:** 220711648 | **Author:** Eustakius
 
 </div>
 
@@ -42,4 +42,4 @@
 
 ## 📄 License
 
-MIT © 2025 Eustakius Satu Rajawali Ku
+MIT © 2025 Eustakius
